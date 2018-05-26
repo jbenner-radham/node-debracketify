@@ -1,0 +1,44 @@
+{
+  "name": "debracketify",
+  "version": "0.0.0",
+  "description": "Remove encompassing square brackets from a string.",
+  "main": "lib/index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "scripts": {
+    "prepublishOnly": "trevor",
+    "pretest": "eslint {bin,lib,test}",
+    "readme": "readme-md > README.md",
+    "test": "nyc jasmine --config=test/spec/support/jasmine.json"
+  },
+  "engines": {
+    "node": ">=6.14"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jbenner-radham/node-debracketify.git"
+  },
+  "keywords": [
+    "bracket",
+    "extract",
+    "string",
+    "square-bracket",
+    "removal",
+    "remove"
+  ],
+  "author": "James Benner <james.benner@gmail.com> (http://www.jamesbenner.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jbenner-radham/node-debracketify/issues"
+  },
+  "homepage": "https://github.com/jbenner-radham/node-debracketify#readme",
+  "devDependencies": {
+    "eslint": "^4.19.1",
+    "jasmine": "^3.1.0",
+    "nyc": "^11.8.0",
+    "readme-md-cli": "^0.11.0",
+    "trevor": "github:jbenner-radham/trevor#fix-for-missing-onbuild-images"
+  }
+}
